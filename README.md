@@ -1,91 +1,102 @@
 # Crime Analysis in India
 
-## 📊 Project Description
+Data analysis project focused on preprocessing Indian crime datasets, identifying trends, and communicating insights through visual analytics using R.
 
-This project analyzes crime data in India using **R programming**.
-The aim of this project is to explore crime patterns, visualize trends, and perform statistical analysis on crime datasets.
+## Tech Stack
 
-The analysis helps understand crime distribution across different regions and categories.
+| Layer | Technology |
+|-------|------------|
+| **Language** | R |
+| **Analysis** | Data Cleaning, Statistical Analysis |
+| **Visualization** | ggplot2, shiny |
+| **IDE** | RStudio |
 
----
+## Project Structure
 
-## 🎯 Objectives
-
-* Analyze crime data in India
-* Identify patterns and trends in crime statistics
-* Visualize crime data using graphs and charts
-* Perform data analysis using R
-
----
-
-## 🛠️ Technologies Used
-
-* **R Programming**
-* **RStudio**
-* Data Visualization
-* Statistical Analysis
-
----
-
-## 📂 Project Files
-
-```id="rj3b9p"
-app.R            → Main R script for analysis
-RProject.Rproj   → R project configuration
-.RData           → Saved dataset
-.Rhistory        → Command history
-README.md        → Project documentation
+```
+Crime_analysis_in_india/
+├── app.R                   # Shiny application entry point
+├── .RData                  # Saved R workspace
+├── .Rhistory               # R command history
+├── RProject.Rproj          # RStudio project file
+└── README.md
 ```
 
----
+## Features
 
-## 📈 Analysis Performed
+- **Data Preprocessing**: Clean and transform raw crime data from NCRB (National Crime Records Bureau)
+- **Statistical Analysis**: Descriptive statistics, trend analysis, correlation studies
+- **Interactive Visualization**: Shiny-based dashboard for exploring crime trends
+- **Geographic Analysis**: State-wise and district-wise crime patterns
+- **Temporal Analysis**: Year-over-year trends, seasonal patterns
 
-* Data exploration
-* Crime distribution analysis
-* Statistical summaries
-* Data visualization using graphs
+## Data Sources
 
----
+- **Primary**: National Crime Records Bureau (NCRB) annual reports
+- **Scope**: Indian states and union territories
+- **Period**: Multi-year historical data
 
-## 📊 Possible Visualizations
+## Setup Instructions
 
-* Bar charts of crime types
-* Crime distribution by state
-* Trend analysis of crime over years
-* Comparative crime analysis
+### Prerequisites
+- R 4.0+
+- RStudio (recommended)
+- Required R packages (see below)
 
----
+### Installation
 
-## 🚀 How to Run the Project
+```bash
+# Clone repository
+git clone https://github.com/abhxxy45/Crime_analysis_in_india.git
+cd Crime_analysis_in_india
 
-1. Open the project in **RStudio**
-2. Load the dataset
-3. Run the `app.R` file
+# Open in RStudio
+open RProject.Rproj
 
-Example:
+# Install required packages
+install.packages(c("shiny", "ggplot2", "dplyr", "readr", "tidyr", "DT", "plotly"))
 
-```id="iowvmr"
-source("app.R")
+# Run Shiny app
+shiny::runApp()
 ```
 
+### Required R Packages
+
+| Package | Purpose |
+|---------|---------|
+| `shiny` | Interactive web applications |
+| `ggplot2` | Data visualization |
+| `dplyr` | Data manipulation |
+| `readr` | Fast CSV reading |
+| `tidyr` | Data tidying |
+| `DT` | Interactive tables |
+| `plotly` | Interactive plots |
+
+## Analysis Workflow
+
+1. **Data Import**: Load NCRB CSV files
+2. **Cleaning**: Handle missing values, standardize categories
+3. **Transformation**: Aggregate by state, year, crime type
+4. **Analysis**: Statistical summaries, trend detection
+5. **Visualization**: Interactive charts and maps
+6. **Reporting**: Export findings
+
+## Key Visualizations
+
+- State-wise crime rate heatmap
+- Yearly trend lines by crime category
+- Top 10 states for major crime types
+- Correlation matrix of crime variables
+- Interactive Shiny dashboard
+
+## Screenshots
+
+*To be added*
+
+## License
+
+MIT License — see [LICENSE](LICENSE) for details.
+
 ---
 
-## 📌 Future Improvements
-
-* Interactive dashboards using Shiny
-* More advanced statistical analysis
-* Predictive crime analysis
-
----
-
-## 👨‍💻 Author
-
-**Abhay Verma**
-
----
-
-## 📫 Contact
-
-📧 Email: abhayvermaa45@gmail.com
-🔗 GitHub: https://github.com/abhxxy45
+**Repository**: https://github.com/abhxxy45/Crime_analysis_in_india
